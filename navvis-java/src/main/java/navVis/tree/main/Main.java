@@ -7,31 +7,36 @@ import java.io.File;
 import java.io.IOException;
 
 import navVis.tree.Tree;
+import navVis.tree.TreePrinter1;
 import navVis.utils.Errors;
 
 /**
  * @author luca
  *
  */
-public class Main {
+public class Main
+{
 
-	private static Tree treeInstance = new Tree();
+    private static Tree treeInstance = new Tree();
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException
+    {
 
-		if (args.length == 0) {
-			System.out.println(Errors.ERR_NO_FILE_INPUT);
-			return;
-		}
+        if (args.length == 0)
+        {
+            System.out.println(Errors.ERR_NO_FILE_INPUT);
+            return;
+        }
 
-		File file = new File(args[0]);
+        File file = new File(args[0]);
 
-		if (!file.exists()) {
-			System.out.println(Errors.ERR_FILE_NOT_EXISTS);
-			return;
-		}
+        if (!file.exists())
+        {
+            System.out.println(Errors.ERR_FILE_NOT_EXISTS);
+            return;
+        }
 
-		treeInstance.buildTree(file);
-		treeInstance.print(treeInstance.getRoot());
-	}
+        treeInstance.buildTree(file);
+        TreePrinter1.printTree(treeInstance.getRoot(), "", true);
+    }
 }
