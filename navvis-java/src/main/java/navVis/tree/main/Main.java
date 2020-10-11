@@ -3,17 +3,13 @@
  */
 package navVis.tree.main;
 
+import navVis.tree.Tree;
+import navVis.tree.TreePrinter;
+import navVis.utils.Errors;
+
 import java.io.File;
 import java.io.IOException;
 
-import navVis.tree.Tree;
-import navVis.tree.TreePrinter1;
-import navVis.utils.Errors;
-
-/**
- * @author luca
- *
- */
 public class Main
 {
 
@@ -37,6 +33,6 @@ public class Main
         }
 
         treeInstance.buildTree(file);
-        TreePrinter1.printTree(treeInstance.getRoot(), "", true);
+        TreePrinter.printTree(treeInstance.getRoot(), "", true);
     }
 }

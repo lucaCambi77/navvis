@@ -3,21 +3,16 @@
  */
 package navvis.tree.test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import navVis.tree.Node;
+import navVis.tree.Tree;
+import navVis.tree.TreePrinter;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import navVis.tree.Node;
-import navVis.tree.Tree;
-import navVis.tree.TreePrinter1;
-
-/**
- * @author luca
- *
- */
 public class TreeTest
 {
 
@@ -28,12 +23,10 @@ public class TreeTest
         Tree tree = new Tree();
         tree.buildTree(new File("src/test/resources/navvis.txt"));
 
-        TreePrinter1.printTree(tree.getRoot(), "", true);
+        TreePrinter.printTree(tree.getRoot(), "", true);
 
         Tree tree1 = new Tree();
-        tree1.setTotFrequency(7);
-        Node root = getRootTest();
-        tree1.setRoot(root);
+        tree1.setRoot(getRootTest());
 
         assertEquals(true, identicalTrees(tree.getRoot(), tree1.getRoot()));
     }

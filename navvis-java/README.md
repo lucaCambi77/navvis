@@ -8,13 +8,11 @@ leaf node represents a unique word.
 See pdf in /pdf/NavVis_CodeChallenge_Web_1.pdf
 
 ## Install and run the application
-To use the application you need java 8 installed in your machine. This is a spring boot application with embedded tomcat
+To use the application you need java 8 installed in your machine
 
-There is a default profiles with which you can build the application
+To create jar
 
-To install (on project root)
-
-	- mvn clean install
+	- mvn clean package
 
 To run  
 

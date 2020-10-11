@@ -3,11 +3,7 @@
  */
 package navVis.tree;
 
-/**
- * @author luca
- *
- */
-public class TreePrinter1
+public class TreePrinter
 {
 
     public static void printTree(Node root, String indent, boolean last)
