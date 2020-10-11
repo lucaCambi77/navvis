@@ -25,10 +25,10 @@ public class TreeTest
 
         TreePrinter.printTree(tree.getRoot(), "", true);
 
-        Tree tree1 = new Tree();
-        tree1.setRoot(getRootTest());
+        Tree treeTest = new Tree();
+        treeTest.setRoot(getRootTest());
 
-        assertEquals(true, identicalTrees(tree.getRoot(), tree1.getRoot()));
+        assertEquals(true, identicalTrees(tree.getRoot(), treeTest.getRoot()));
     }
 
     /**
@@ -70,11 +70,11 @@ public class TreeTest
 
         Node right5 = new Node();
         right5.setFrequency(2);
-        right5.setWord("address");
+        right5.setWord("had");
 
         Node left5 = new Node();
         left5.setFrequency(2);
-        left5.setWord("had");
+        left5.setWord("address");
 
         right4.setLeft(left5);
         right4.setRight(right5);
@@ -97,5 +97,4 @@ public class TreeTest
         /* 3. one empty, one not -> false */
         return false;
     }
-
 }

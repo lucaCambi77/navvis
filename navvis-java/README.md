@@ -8,7 +8,9 @@ leaf node represents a unique word.
 See pdf in /pdf/NavVis_CodeChallenge_Web_1.pdf
 
 ## Install and run the application
-To use the application you need java 8 installed in your machine
+Requirements
+* Java8
+* Maven
 
 To create jar
 
