@@ -5,7 +5,7 @@ Write a Java-based program (command line) that reads text from a file, splits it
 at spaces and newline characters and constructs an (unbalanced) binary tree where each
 leaf node represents a unique word.
 
-See pdf in /pdf/NavVis_CodeChallenge_Web_1.pdf
+[See pdf](../NavVis_CodeChallenge_Web_1.pdf)
 
 ## Install and run the application
 Requirements
